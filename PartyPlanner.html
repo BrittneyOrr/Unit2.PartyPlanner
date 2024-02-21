@@ -10,9 +10,52 @@
 <body>
     <h1>Time to plan some Parties!</h1>
     <h2>See below for the following available parties as well as add your own:</h2>
+    <fieldset>
     <form id="addParty">
-        
-    </form>
+        <p>
+            <label>
+                Party name
+                <input type="text" name="name" placeholder="Party Name" />
+            </label>
+        </p>
 
-</body>
+        <p>
+            <label>
+                Description
+                <input
+                    type="text"
+                    name="description"
+                    placeholder="Description"
+                    />
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Date
+                <input
+                    type="date"
+                    name="date"
+                    />
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Location
+                <input
+                    type="text"
+                    name="location"
+                    placeholder="Party Location"
+                    />
+            </label>
+        </p>
+        <button type="submit">Add party</button>
+    </form>
+    </fieldset>
+    <!-- <button class="btn">click me</button> -->
+
+    <ul id="parties"></ul>
+
+    </body>
 </html>
